@@ -17,7 +17,7 @@ pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu121
 pip install -r requirements.txt
 
 
-2. Data
+## 2. Data
 
 Place the raw Elia data file in:
 
@@ -31,7 +31,7 @@ Elia Grid Load
 
 
 
-3. File Structure
+## 3. File Structure
 code/
 ├── data/
 │   └── ods003.csv
@@ -46,7 +46,7 @@ code/
 └── README.md
 
 
-4. Main Settings
+## 4. Main Settings
 Input window length L = 96
 Forecasting horizons H = 1, 4, 8, 12
 Rolling decomposition window W_dec = 288
@@ -60,7 +60,7 @@ Early stopping patience = 15
 Random seed = 42
 
 
-5. Running Steps
+## 5. Running Steps
 Step 1: Load raw Elia data
 python 01_load_data.py \
   --input data/ods003.csv \
@@ -114,7 +114,7 @@ python 05_train_evaluate.py \
   --device cuda
 
 
-6. Outputs
+## 6. Outputs
 
 Main output files include:
 
